@@ -1,4 +1,8 @@
-# light-dom-selector
+# light-dom-selector [![][badge-gzip]][link-npm] [![npm downloads][badge-downloads]][link-npm]
+
+[badge-gzip]: https://img.shields.io/bundlephobia/minzip/select-dom.svg?label=gzipped
+[badge-downloads]: https://img.shields.io/npm/dt/select-dom.svg
+[link-npm]: https://www.npmjs.com/package/light-dom-selector
 
 > Lightweight dom selector by simple symbols that outputs an `SelectorFn` instance.
 
