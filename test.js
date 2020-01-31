@@ -13,6 +13,9 @@ console.log($("*#app h1"));
 console.log($("~h1"));
 console.log($("@bar"));
 
-$("#app").on("click", function () {
+function clickFn() {
     console.log(this);
-});
+}
+
+$("#app").on("click", clickFn);
+$("#app").off("click", clickFn);

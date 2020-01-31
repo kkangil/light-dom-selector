@@ -1,4 +1,4 @@
-# light-dom-selector [![][badge-gzip]][link-npm] [![npm downloads][badge-downloads]][link-npm]
+# light-dom-selector [![][badge-gzip]][link-npm] [![npm downloads][badge-downloads]][link-npm] [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kkangil/light-dom-selector/LICENSE) [![npm version](https://img.shields.io/npm/v/light-dom-selector.svg?style=flat)](https://www.npmjs.com/package/light-dom-selector)
 
 [badge-gzip]: https://img.shields.io/bundlephobia/minzip/light-dom-selector.svg?label=gzipped
 [badge-downloads]: https://img.shields.io/npm/dt/light-dom-selector.svg
@@ -65,7 +65,7 @@ $("@app")
 
 ### on
 
-you can handle event by `on` method.
+you can create event by `on` method.
 
 ```js
 $("#app").on("click", function() {
@@ -77,3 +77,13 @@ $("#app").on("click mouseover", function() {
 });
 ```
 
+remove event by `off` method.
+
+```js
+function clickFn() {
+    console.log(this);
+}
+$("#app").on("click", clickFn); // addEventListener
+
+$("#app").off("click", clickFn); // removeEventListener
+```

@@ -1,6 +1,6 @@
 {
   "name": "light-dom-selector",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Extra lightweight DOM selector helper",
   "main": "index.js",
   "scripts": {
